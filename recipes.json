@@ -1,7 +1,114 @@
-rcp = {'Nat\'s Bolognese':{'pork mince':500, 'beef mince':500, 'red wine':300, 'onion':1, 'celery':1, 'carrot':3, 'canned tomatoes':400, 'milk':100, 'thyme':2, },\
-            'Nat\'s Chicken Curry':{'chicken breasts':3, 'rice':200, 'double cream':1, 'chicken stock':400, 'tomatoes, canned':400, 'yoghurt, plain':300, 'garlic':3, \
-            'coriander':1, 'onion':1, 'chilli':1, 'bell pepper':2,}, 'Tom\'s Chicken Pasta':{'chicken breast':3, 'tomatoes, canned':800, 'onion':1, 'carrot':2, 'turmeric':1, \
-            'coriander':1, 'cumin':1, 'chestnut mushrooms':200, 'pasta':300, 'garlic':1, 'fine beans':200}, 'Gordon\'s Chorizo Roast Chicken':{'chorizo':1, 'onion':2, 'garlic':1, \
-            'cannolini beans':400, 'thyme':1, 'tomatoes, dried':150, 'lemon':1, 'paprika':1} 'Tom\'s Chilli':{'beef mince':800, 'onion':1, 'dark chocolate':50, \
-            'fine Beans':200, 'garlic':1, 'cumin':1, 'paprika':1, 'chilli powder':1, 'coriander':1, 'carrot':2, 'pepper, green':2, 'kidney beans':400, 'chilli':2, \
-            'tomatoes, canned':400, 'beef stock':400, 'red wine':300}}
+{
+    "Nat's Bolognese": {  
+        "pork mince": "500g",
+        "beef mince": "500g",
+        "red wine": "300g",
+        "onion": 1,
+        "celery": 1,
+        "carrot": 3,
+        "canned tomatoes": "400g",
+        "milk": "100g",
+        "thyme": 2
+    },
+    "Nat's Chicken Curry": {
+        "chicken breasts": 3,
+        "rice": "200g",
+        "double cream": 1,
+        "chicken stock": "400g",
+        "tomatoes, canned": "400g",
+        "yoghurt, plain": "300g",
+        "garlic": 3,
+        "coriander": 1,
+        "onion": 1,
+        "chilli": 1,
+        "bell pepper": 2
+    },
+    "Tom's Chicken Pasta": {
+        "chicken breast": 3,
+        "tomatoes, canned": "800g",
+        "onion": 1,
+        "carrot": 2,
+        "turmeric": 1,
+        "coriander": 1,
+        "cumin": 1,
+        "chestnut mushrooms": "200g",
+        "pasta": "300g",
+        "garlic": 1,
+        "fine beans": "200g"
+    },
+    "Gordon's Chorizo Roast Chicken": {
+        "chorizo": 1,
+        "onion": 2,
+        "garlic": 1,
+        "cannolini beans": "400g",
+        "thyme": 1,
+        "tomatoes, dried": "150g",
+        "lemon": 1,
+        "paprika": 1
+    },
+    "Tom's Chilli": {
+        "beef mince": "800g",
+        "onion": 1,
+        "dark chocolate": "50g",
+        "fine beans": "200g",
+        "garlic": 1,
+        "cumin": 1,
+        "paprika": 1,
+        "chilli powder": 1,
+        "coriander": 1,
+        "carrot": 2,
+        "pepper, green": 2,
+        "kidney beans": "400g",
+        "chilli": 2,
+        "tomatoes, canned": "400g",
+        "beef stock": "400ml",
+        "red wine": "300ml"
+    },
+    "Beef and Ale Pie": {
+        "porcini mushrooms": "10g",
+        "steak, braising": "1000g",
+        "onions": 2,
+        "carrots": 4,
+        "golden caster sugar": "2tsp",
+        "flour, plain": "4tbsp",
+        "ale, dark": "300ml",
+        "beef stock": "400ml",
+        "thyme": null,
+        "bacon lardons, smoked": "200g",
+        "chestnut mushrooms": "200g"
+    },
+    "Vegan Ramen":{
+        "garlic, cloves":2,
+        "shiitake mushrooms, dried":"15g",
+        "vegan stock": "1L",
+        "soy sauce": "2tbsp",
+        "tofu, firm": "200g",
+        "cornflour": "1tbsp",
+        "noodles, rice": "100g",
+        "pak choi": 1,
+        "spring onions": 2,
+        "beansprouts, ready to eat": "25g",
+        "carrots": 1
+    },
+    "Caponata Pasta":{
+        "onion":1,
+        "garlic cloves":4,
+        "mediterranean vegetables, chargrilled":"250g",
+        "tomatoes, canned": "400g",
+        "capers":"1tbsp",
+        "raisins":"2tbsp",
+        "pasta, rigatoni": "350g",
+        "basil": null,
+        "parmesan, to serve": null
+    },
+    "Chorizo, Ricotta, and Spinach Pasta":{
+        "pasta, penne":"400g",
+        "chorizo, diced":"140g",
+        "baby spinach": "180g",
+        "garlic cloves":2,
+        "ricotta":"250g",
+        "milk":"2tbsp",
+        "lemon":1,
+        "parmesan, to serve": null,
+    }
+}
