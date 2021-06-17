@@ -15,7 +15,12 @@ with open("recipes.json", 'r') as recipe_json:
 
 recipe_links = list(recipes_list.keys())
 
-print(recipe_links)
+# ====== take ingredients from recipes_list =========
+
+ingredients_list = list(recipes_list.values())
+
+
+print(ingredients_list)
 
 @app.route("/")
 def home():
@@ -23,7 +28,7 @@ def home():
 
 @app.route("/<recipe>")
 def recipe():
-    return render_template('index.html', recipe=recipe)
+    return render_template('recipe.html', recipes_list=recipes_list)
 
 if __name__ == "__main__":
     app.run(host='127.0.0.1', port=8000)
