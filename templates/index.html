@@ -4,14 +4,19 @@
 	<meta charset="utf-8">
 	<title>RecComSended Index Page</title>
 	<link rel="stylesheet" href="css/style.css">
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+
 </head>
 
 <body id="home">
 
 	<h1>Welcome to RecComSended!</h1>
+	<h2>Choose from a list of recipes</h2>
+	{% for recipe in recipe_links %}
+		<ul>
+			<li><h3>{{ recipe }}<h3></li>
+		</ul>
+	{% endfor %}
+
 
 </body>
 </html>
