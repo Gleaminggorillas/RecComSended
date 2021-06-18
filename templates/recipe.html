@@ -9,11 +9,37 @@
 
 <body id="recipe">
 
-	<h1>Welcome to RecComSended: Recipe Ingredients!</h1>
+	<h1>Welcome to RecComSended: Recipe Ingredients for {{ recipe }}!</h1>
 
-	{% for recipe in recipes_list %}
-		<h2>{{ recipe }}</h2>
+	<dl>
+	{% for key, value in rec_ingredients.items() %}
+		<dt><h2>{{ key|e }}</h2></dt>
+		<dd><h2>{{ value|e }}</h2></dd>
+		<hr>
 	{% endfor %}
+	</dl>
+	<!-- 
+	<ul>
+	{% for ingredients in recipes_list.values() %}
+		<p>{{ recipe }}</p>
+		<dl>
+		{% for ingredient, measure in ingredients.items() %}
+			<dt>{{ ingredient|e }}</dt>
+			<dd>{{ measure|e }}</dd>
+			<hr>
+		{% endfor %}
+	</dl>
+	{% endfor %}
+	</ul>
+
+	<dl>
+	{% for key, value in recipes_list.items() %}
+		<dt>{{ key|e }}</dt>
+		<dd>{{ value|e }}</dd>
+		<hr>
+	{% endfor %}
+	</dl>
+-->
 
 </body>
 </html>

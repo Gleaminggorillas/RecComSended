@@ -1,7 +1,5 @@
-import os
 import json
-import pandas as pd
-from flask import Flask, render_template, json, url_for, abort, current_app as app
+from flask import Flask, render_template, json, abort, current_app as app
 
 
 app = Flask(__name__)
@@ -14,7 +12,7 @@ with open("recipes.json", 'r') as recipe_json:
 # ======= recipes_list keys into interpolated list for index.html links ======
 
 recipe_links = list(recipes_list.keys())
-
+print(recipes_list.get("Nat's Bolognese"))
 # ====== take ingredients from recipes_list =========
 
 ingredients_list = list(recipes_list.values())
@@ -26,10 +24,12 @@ print(ingredients_list)
 def home():
     return render_template("index.html", recipe_links=recipe_links)
 
-@app.route("/<str:recipe>")
+@app.route("/<recipe>")
 def recipe(recipe):
+    rec_ingredients=recipes_list.get(recipe)
+
     if recipe in recipe_links:
-        return render_template('recipe.html', recipes_list=recipes_list)
+        return render_template('recipe.html', recipes_list=recipes_list, recipe=recipe, rec_ingredients=rec_ingredients)
     else:
         abort(404)
 
