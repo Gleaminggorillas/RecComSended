@@ -12,13 +12,13 @@ with open("recipes.json", 'r') as recipe_json:
 # ======= recipes_list keys into interpolated list for index.html links ======
 
 recipe_links = list(recipes_list.keys())
-print(recipes_list.get("Nat's Bolognese"))
+#print(recipes_list.get("Nat's Bolognese"))
 # ====== take ingredients from recipes_list =========
 
 ingredients_list = list(recipes_list.values())
 
 
-print(ingredients_list)
+#print(ingredients_list)
 
 @app.route("/")
 def home():
