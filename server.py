@@ -1,7 +1,7 @@
 import os
 import json
 import pandas as pd
-from flask import Flask, render_template, json, current_app as app
+from flask import Flask, render_template, json, url_for, abort, current_app as app
 
 
 app = Flask(__name__)
@@ -26,9 +26,12 @@ print(ingredients_list)
 def home():
     return render_template("index.html", recipe_links=recipe_links)
 
-@app.route("/<recipe>")
-def recipe():
-    return render_template('recipe.html', recipes_list=recipes_list)
+@app.route("/<str:recipe>")
+def recipe(recipe):
+    if recipe in recipe_links:
+        return render_template('recipe.html', recipes_list=recipes_list)
+    else:
+        abort(404)
 
 if __name__ == "__main__":
     app.run(host='127.0.0.1', port=8000)

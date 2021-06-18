@@ -13,7 +13,7 @@
 	<h2>Choose from a list of recipes</h2>
 	{% for recipe in recipe_links %}
 		<ul>
-			<li><a href="/{{ recipe }}"></a></li>
+			<li><a href={{ url_for('recipe') }}>{{ recipe }}</li></a>
 		</ul>
 	{% endfor %}
 
