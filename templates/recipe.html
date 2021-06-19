@@ -1,3 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ recipe }} Ingredients{% endblock %}
+{% block header %}
+{% endblock %}
+	{% block content %}
+	<h1>Welcome to RecComSended: Recipe Ingredients for {{ recipe }}!</h1>
+	<hr>
+	<body>
+		<dl>
+		{% for key, value in rec_ingredients.items() %}
+			<dt><h2>{{ key|e }}</h2></dt>
+			<dd><h2>{{ value|e }}</h2></dd>
+			<hr>
+		{% endfor %}
+		</dl>
+	{% endblock%}
+	</body>
+</html>
+
+
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,28 +39,9 @@
 		<hr>
 	{% endfor %}
 	</dl>
-	<!-- 
-	<ul>
-	{% for ingredients in recipes_list.values() %}
-		<p>{{ recipe }}</p>
-		<dl>
-		{% for ingredient, measure in ingredients.items() %}
-			<dt>{{ ingredient|e }}</dt>
-			<dd>{{ measure|e }}</dd>
-			<hr>
-		{% endfor %}
-	</dl>
-	{% endfor %}
-	</ul>
 
-	<dl>
-	{% for key, value in recipes_list.items() %}
-		<dt>{{ key|e }}</dt>
-		<dd>{{ value|e }}</dd>
-		<hr>
-	{% endfor %}
-	</dl>
--->
+=================== 
 
 </body>
 </html>
+-->

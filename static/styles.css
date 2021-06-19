@@ -1,13 +1,52 @@
-
+/* ======================= TAG SELECTORS ====================== */
 body { background-color: #EAE2B6;}
 
-h1 {color: #7F8B52;}
-h2 {color: #7F8B52;}
-p {color: #7F8B52;}
+h1 {color: #7F8B52; font-family: 'Benne', serif;}
+h2 {color: #7F8B52; font-family: 'Benne', serif;}
+p {color: #7F8B52; font-family: 'Benne', serif;}
+a {color: #7F8B52; font-family: 'Benne', serif;}
 
-nav {background-color: #A3A847}
 
 textarea {background-color: #EAE2B6}
 
+/* ====================== CLASS SELECTORS ===================== */
 
-#558776
+/* #558776 */
+
+.content {
+    background-color: #EAE2B6;
+}
+
+/* ====================== NAV BAR (derived from W3 schools https://www.w3schools.com/howto/howto_js_navbar_sticky.asp ) ================== */
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #A3A847;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #7F8B52;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
