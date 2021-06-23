@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # ======= Open "recipes.json" =========
 
-with open("recipes.json", 'r') as recipe_json:
+with open("data/recipes.json", 'r') as recipe_json:
     recipes_list = json.load(recipe_json)
 
 # ======= recipes_list keys into interpolated list for index.html links ======
