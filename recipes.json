@@ -23,6 +23,26 @@
         "chilli": 1,
         "bell pepper": 2
     },
+    "Nat's Shepherds Pie":{
+        "lamb mince": "700g",
+        "potatoes": "800g",
+        "peas": "cup",
+        "carrots": 2,
+        "garlic, cloves": 4,
+        "onion": 1,
+        "thyme": null,
+        "rosemary": null,
+        "egg yolks": 2,
+        "cheese, cheddar": "100g",
+        "parmesan": "50g",
+        "milk": "200ml",
+        "butter": "2tbsp",
+        "stock, beef": "300ml",
+        "worcestershire sauce": null,
+        "tomato puree": "2tbsp",
+        "flour, plain": "1tbsp",
+        "stout": "200ml"
+    },
     "Tom's Chicken Pasta": {
         "chicken breast": 3,
         "tomatoes, canned": "800g",
@@ -111,5 +131,19 @@
         "milk":"2tbsp",
         "lemon":1,
         "parmesan, to serve": null
+    },
+    "Spanish Paella":{
+        "saffron strands": null,
+        "chorizo, chopped": "125g",
+        "chicken breast": "500g",
+        "onion": 1,
+        "garlic, cloves": 3,
+        "pepper, red": 1,
+        "paprika": "2tsp",
+        "rice, paella": "250g",
+        "tomatoes whole": 4,
+        "peas": "75g",
+        "prawns, cooked": "250g",
+        "lemon": 1
     }
 }
