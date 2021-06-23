@@ -7,7 +7,9 @@ body { background-color: #EAE2B6;
 h1 {color: #7F8B52; font-family: 'Benne', serif;}
 h2 {color: #7F8B52; font-family: 'Benne', serif;}
 p {color: #7F8B52; font-family: 'Benne', serif;}
-a {color: #7F8B52; font-family: 'Benne', serif;}
+a {color: #7F8B52; font-family: 'Benne', serif;
+  font-size: 25px;
+}
 
 
 textarea {background-color: #EAE2B6}
@@ -30,6 +32,9 @@ textarea {background-color: #EAE2B6}
 #navbar h1 {
   color: #558776;
   font-size: 70px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 5px;
 }
   
   /* Navbar links */
@@ -38,9 +43,11 @@ textarea {background-color: #EAE2B6}
   display: block;
   color: #558776;
   text-align: center;
-  padding: 14px;
+  padding: 10px;
   text-decoration: none;
   font-size: 40px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   }
   
 /* Page content */

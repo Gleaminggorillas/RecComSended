@@ -25,3 +25,7 @@ Recipe pages present a dictionary from a json.
 --> Attempt implementing webdrive to auto-purchase from specific stores?
         would also require user accounts, and vast restructuring.
 
+--> Implement users and authentication
+
+--> for users, add favourites and ability to POST (and DELETE their own posts, only)
+
