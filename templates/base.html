@@ -1,16 +1,22 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} RecComSended </title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../static/styles.css">
-{% block header %}
-<nav>
+<head>
+  <title>{% block title %}{% endblock %} RecComSended </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+
+<div id="navbar">
   <h1>RecComSended</h1>
-  <a href="{{ url_for('home') }}">Home</a>
-</nav>
-{% endblock %}
+    <a href="{{ url_for('home') }}">Home</a>
+</div>
+
 <section class="content">
     <body>
-    {% block content %}{% endblock %}
+      {% block content %}{% endblock %}
     </body>
 </section>
+
+<script src="../static/base.js"></script> 
+</html>

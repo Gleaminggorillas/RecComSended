@@ -24,6 +24,9 @@ ingredients_list = list(recipes_list.values())
 def home():
     return render_template("index.html", recipe_links=recipe_links)
 
+# change recipe address
+
+
 @app.route("/<recipe>")
 def recipe(recipe):
     rec_ingredients=recipes_list.get(recipe)
